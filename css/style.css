@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  --font-family-default: "Vollkorn", Georgia, serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: var(--font-family-default);
+}
+
 img {
   max-width: 100px;
 }
