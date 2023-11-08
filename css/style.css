@@ -9,10 +9,48 @@
   margin: 0px;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: var(--font-family-default);
 }
 
 img {
   max-width: 100px;
+}
+/*general grid*/
+
+.structure {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+  grid-template-areas:
+    "header header header"
+    "sidenav content adverts"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidenav {
+  grid-area: sidenav;
+}
+
+.content {
+  grid-area: content;
+}
+
+.adverts {
+  grid-area: adverts;
+}
+
+.footer {
+  grid-area: footer;
 }
