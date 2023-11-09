@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
+  --primary-dark-purple: #8844ee;
+  --primary-light-purple: #b07dfb;
+  --primary-withe: #ffffff;
+
+  --gradient-primary: linear-gradient(135deg, #8844ee, #b07dfb);
+
   --font-family-default: "Vollkorn", Georgia, serif;
 }
 
@@ -22,7 +28,7 @@ body {
 }
 
 img {
-  max-width: 100px;
+  max-width: 100%;
 }
 /*general grid*/
 
@@ -35,9 +41,45 @@ img {
     "footer footer footer";
 }
 
+/*Header*/
+
 .header {
+  align-items: center;
+  background: var(--gradient-primary);
+  display: grid;
+  grid-template-columns: 1fr auto;
   grid-area: header;
+  padding: 1.875rem;
 }
+
+.logo {
+  max-width: 200px;
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header nav a {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.3125rem;
+  color: var(--primary-withe);
+  display: block;
+  font-size: 1.125rem;
+
+  padding: 0.625rem;
+  transition: 0.1s;
+}
+.header nav a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header li + li {
+  margin-left: 1.875rem;
+}
+
+/*------- */
 
 .sidenav {
   grid-area: sidenav;
