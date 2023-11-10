@@ -32,6 +32,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 /*general grid*/
@@ -91,14 +92,14 @@ img {
 }
 
 .sidenav li a {
+  background-color: var(--primary-withe);
+  border-radius: 0.3125rem;
+  box-shadow: 0.3125rem 0.3125rem 0.9375rem 0 var(--secondary-shadow-gray);
   display: block;
   min-width: 3.75rem;
   max-width: 6.25rem;
   margin: 0 auto 1.875rem auto;
-  background-color: var(--primary-withe);
   padding: 1.25rem;
-  border-radius: 0.3125rem;
-  box-shadow: 0.3125rem 0.3125rem 0.9375rem 0 var(--secondary-shadow-gray);
   transition: 0.1s ease-out;
 }
 
@@ -106,14 +107,33 @@ img {
   background-color: var(--primary-light-purple);
 }
 
+/*Content*/
 .content {
   grid-area: content;
 }
 
+/*Adverts*/
 .adverts {
+  align-content: start;
+  background-color: var(--bg-light-gray);
+  display: grid;
   grid-area: adverts;
+  gap: 1.875rem;
+  padding: 1.875rem;
 }
 
+/*Footer*/
 .footer {
+  background: var(--gradient-primary);
   grid-area: footer;
+}
+
+.footer p {
+  color: var(--primary-withe);
+  padding: 1.875rem;
+  text-align: center;
+}
+
+.footer p a {
+  color: var(--primary-withe);
 }
