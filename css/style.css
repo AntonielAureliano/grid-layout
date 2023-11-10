@@ -5,6 +5,10 @@
   --primary-light-purple: #b07dfb;
   --primary-withe: #ffffff;
 
+  --bg-light-gray: #fafbfc;
+
+  --secondary-shadow-gray: rgba(44, 44, 44, 0.15);
+
   --gradient-primary: linear-gradient(135deg, #8844ee, #b07dfb);
 
   --font-family-default: "Vollkorn", Georgia, serif;
@@ -67,7 +71,6 @@ img {
   color: var(--primary-withe);
   display: block;
   font-size: 1.125rem;
-
   padding: 0.625rem;
   transition: 0.1s;
 }
@@ -79,10 +82,28 @@ img {
   margin-left: 1.875rem;
 }
 
-/*------- */
+/*Sidenav*/
 
 .sidenav {
+  background-color: var(--bg-light-gray);
   grid-area: sidenav;
+  padding: 1.875rem;
+}
+
+.sidenav li a {
+  display: block;
+  min-width: 3.75rem;
+  max-width: 6.25rem;
+  margin: 0 auto 1.875rem auto;
+  background-color: var(--primary-withe);
+  padding: 1.25rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0.3125rem 0.3125rem 0.9375rem 0 var(--secondary-shadow-gray);
+  transition: 0.1s ease-out;
+}
+
+.sidenav li a:hover {
+  background-color: var(--primary-light-purple);
 }
 
 .content {
