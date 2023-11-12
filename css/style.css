@@ -8,6 +8,7 @@
   --bg-light-gray: #fafbfc;
 
   --secondary-shadow-gray: rgba(44, 44, 44, 0.15);
+  --secondary-light-black: rgba(0, 0, 0, 0.7);
 
   --gradient-primary: linear-gradient(135deg, #8844ee, #b07dfb);
 
@@ -129,6 +130,34 @@ img {
 
 .image-2 {
   align-self: end;
+}
+
+/*Content style*/
+p {
+  color: var(--secondary-light-black);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: -0.005rem;
+}
+
+.information p + p {
+  margin-top: 1.875rem;
+}
+
+/*Title*/
+.title {
+  color: var(--primary-light-purple);
+}
+
+.title h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.title span {
+  font-size: 0.875rem;
+  font-style: italic;
 }
 
 /*Adverts*/
