@@ -36,7 +36,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 /*general grid*/
 
@@ -194,6 +194,12 @@ img {
   padding: 1.875rem;
 }
 
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: auto;
+  }
+}
+
 .col-wide {
   grid-column: 1 / -1;
 }
@@ -312,8 +318,9 @@ p {
   align-content: start;
   background-color: var(--bg-light-gray);
   display: grid;
-  grid-area: adverts;
   gap: 1.875rem;
+  grid-area: adverts;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   padding: 1.875rem;
 }
 
