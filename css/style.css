@@ -13,6 +13,7 @@
   --gradient-primary: linear-gradient(135deg, #8844ee, #b07dfb);
 
   --font-family-default: "Vollkorn", Georgia, serif;
+  --font-family-secondary: "Courier", monospace;
 }
 
 * {
@@ -195,6 +196,41 @@ p {
   border-radius: 0 0 0.3125rem 0.3125rem;
   position: relative;
   top: 0.125rem;
+}
+
+.content-featured {
+  color: var(--primary-light-purple);
+  font-size: 0.875rem;
+  max-width: 16rem;
+}
+
+.quote,
+.attribute {
+  align-self: start;
+  background: var(--gradient-primary);
+  padding: 1.875rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0.3125rem 0.3125rem 0.9375rem 0 var(--secondary-shadow-gray);
+}
+
+.quote p {
+  color: var(--primary-withe);
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 0 auto;
+  max-width: 31.25rem;
+  text-align: center;
+}
+
+.attribute li {
+  color: var(--primary-withe);
+  font-family: var(--font-family-secondary);
+  font-size: 1.125rem;
+  padding: 0.9375rem;
+}
+
+.attribute li + li {
+  border-top: solid 2px var(--primary-light-purple);
 }
 
 /*Adverts*/
